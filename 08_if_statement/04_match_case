@@ -1,0 +1,14 @@
+a = int(input("Enter a number between 1 and 10 :"))
+match a:
+    case 1:
+        print("you won a phone ")
+
+    case 5:
+        print("you won a laptop ")
+
+    case 3:
+        print("you won a 10$ gift card ")
+
+    case _:
+        print("Better luck next time ")    
+        
