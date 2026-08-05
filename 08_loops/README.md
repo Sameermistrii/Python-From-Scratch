@@ -38,3 +38,36 @@ Be careful to avoid infinite loops by ensuring the condition eventually becomes 
 Example of an infinite loop:
 while True:
     print("This will run forever!")
+
+
+    Break, Continue, and Pass Statements
+Break, Continue, and Pass Statements
+Break
+The break statement is used to exit a loop prematurely.
+Example:
+for i in range(10):
+    if i == 5:
+        break
+    print(i)  # Output: 0, 1, 2, 3, 4
+
+Continue
+The continue statement skips the rest of the code in the current iteration and moves to the next iteration.
+Example:
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)  # Output: 0, 1, 3, 4
+
+Pass
+The pass statement is a placeholder that does nothing. It is used when syntax requires a statement but no action is needed.
+Example:
+for i in range(5):
+    if i == 3:
+        pass  # Do nothing
+    print(i)  # Output: 0, 1, 2, 3, 4
+
+Summary
+Use if, elif, and else for decision-making.
+Use match-case for pattern matching (Python 3.10+).
+Use for loops to iterate over sequences and while loops for repeated execution based on a condition.
+Control loop execution with break, continue, and pass.
