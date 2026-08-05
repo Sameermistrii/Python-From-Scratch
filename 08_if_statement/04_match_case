@@ -10,5 +10,5 @@ match a:
         print("you won a 10$ gift card ")
 
     case _:
-        print("Better luck next time ")    
+        print("Better luck next time ")
         
