@@ -47,3 +47,48 @@ numbers = [1, 2, 3, 4]
 squared = list(map(lambda x: x**2, numbers))
 print(squared)  # Output: [1, 4, 9, 16]
 
+Recursion in Python
+A function calling itself to solve a problem.
+
+Example: Factorial using Recursion
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+ 
+print(factorial(5))  # Output: 120
+
+Important Notes:
+Must have a base case to avoid infinite recursion.
+Used in algorithms like Fibonacci, Tree Traversals.
+
+
+Modules and pip - Using External Libraries
+Importing Modules
+Python provides built-in and third-party modules.
+
+Example: Using the math module
+import math
+ 
+print(math.sqrt(16))  # Output: 4.0
+
+Creating Your Own Module
+Save this as mymodule.py:
+
+def greet(name):
+    return f"Hello, {name}!"
+
+Import in another file:
+
+import mymodule
+print(mymodule.greet("Alice"))  # Output: Hello, Alice!
+
+Installing External Libraries with pip
+pip install requests
+
+Example usage:
+
+import requests
+ 
+response = requests.get("https://api.github.com")
+print(response.status_code)
