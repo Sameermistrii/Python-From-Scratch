@@ -95,3 +95,9 @@ class Dog:
 dog1 = Dog()          # name will be "Unknown", breed will be "Mixed"
 dog2 = Dog("Rex")     # name will be "Rex", breed will be "Mixed"
 dog3 = Dog("Bella", "Labrador") # name will be "Bella", breed will be "Labrador"
+
+Instance and class attributes
+Class vs. Instance Attributes:
+Class Attributes: These are shared by all objects of the class. Like species in our Dog class. All dogs belong to the same species. They are defined outside of any method, directly within the class.
+
+Instance Attributes: These are specific to each individual object. name and breed are instance attributes. Each dog has its own name and breed. They are usually defined within the __init__ method.
